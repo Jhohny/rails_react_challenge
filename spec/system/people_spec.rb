@@ -3,7 +3,7 @@ RSpec.describe "People", type: :system do
     driven_by(:selenium_chrome_headless)
   end
 
-  it 'should render a React component' do
+  xit 'should render a React component' do
     visit '/'
     expect(page).to have_content('Hello React!')
   end

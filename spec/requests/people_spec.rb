@@ -6,5 +6,9 @@ RSpec.describe "People", type: :request do
       get api_v1_people_index_path
       expect(response).to be_successful
     end
+
+    it 'returns people' do
+
+    end
   end
 end

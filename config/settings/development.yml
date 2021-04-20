@@ -1,0 +1,2 @@
+salesloft:
+  token:  <%= ENV['SALESLOFT_API_KEY'] %>

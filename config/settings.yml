@@ -1,0 +1,4 @@
+salesloft:
+  url: https://api.salesloft.com/
+  token: test
+  people_path: v2/people.json
