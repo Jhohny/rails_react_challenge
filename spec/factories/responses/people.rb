@@ -11,33 +11,33 @@ FactoryBot.define do
             "prev_page": nil
           },
           "sorting": {
-            "sort_by": "updated_at",
-            "sort_direction": "DESC NULLS LAST"
+            "sort_by": 'updated_at',
+            "sort_direction": 'DESC NULLS LAST'
           }
         },
         "data": [
           {
-            "id": 249340741,
-            "created_at": "2020-01-10T15:44:04.134541-05:00",
-            "updated_at": "2020-01-20T04:46:19.961197-05:00",
+            "id": 249_340_741,
+            "created_at": '2020-01-10T15:44:04.134541-05:00',
+            "updated_at": '2020-01-20T04:46:19.961197-05:00',
             "last_contacted_at": nil,
             "last_replied_at": nil,
-            "first_name": "Steven",
-            "last_name": "Pease",
-            "display_name": "Steven Pease",
-            "email_address": "sakatius@gmail.com",
-            "full_email_address": "\"Steven Pease\" <sakatius@gmail.com>",
-            "secondary_email_address": "sakatius@gmail.com",
-            "personal_email_address": "sakatius@gmail.com",
-            "phone": "7702354590",
+            "first_name": 'Steven',
+            "last_name": 'Pease',
+            "display_name": 'Steven Pease',
+            "email_address": 'sakatius@gmail.com',
+            "full_email_address": '"Steven Pease" <sakatius@gmail.com>',
+            "secondary_email_address": 'sakatius@gmail.com',
+            "personal_email_address": 'sakatius@gmail.com',
+            "phone": '7702354590',
             "phone_extension": nil,
             "home_phone": nil,
             "mobile_phone": nil,
             "linkedin_url": nil,
-            "title": "Software Engineer",
-            "city": "Atlanta",
-            "state": "GA",
-            "country": "United States",
+            "title": 'Software Engineer',
+            "city": 'Atlanta',
+            "state": 'GA',
+            "country": 'United States',
             "work_city": nil,
             "work_state": nil,
             "work_country": nil,
@@ -46,11 +46,11 @@ FactoryBot.define do
             "crm_object_type": nil,
             "owner_crm_id": nil,
             "person_company_name": nil,
-            "person_company_website": "http://gmail.com",
+            "person_company_website": 'http://gmail.com',
             "person_company_industry": nil,
             "do_not_contact": true,
             "bouncing": false,
-            "locale": "US/Eastern",
+            "locale": 'US/Eastern',
             "eu_resident": false,
             "personal_website": nil,
             "twitter_handle": nil,
@@ -69,8 +69,8 @@ FactoryBot.define do
             },
             "account": nil,
             "owner": {
-              "_href": "https://api.salesloft.com/v2/users/46818",
-              "id": 46818
+              "_href": 'https://api.salesloft.com/v2/users/46818',
+              "id": 46_818
             },
             "last_contacted_by": nil,
             "import": nil,
@@ -97,40 +97,40 @@ FactoryBot.define do
             "prev_page": nil
           },
           "sorting": {
-            "sort_by": "updated_at",
-            "sort_direction": "DESC NULLS LAST"
+            "sort_by": 'updated_at',
+            "sort_direction": 'DESC NULLS LAST'
           }
         },
         "data": [
           {
             "id": 2,
-            "first_name": "maybe",
-            "email_address": "duplicate@mail.com"
+            "first_name": 'maybe',
+            "email_address": 'duplicate@mail.com'
           },
           {
             "id": 4,
-            "first_name": "maybe b",
-            "email_address": "duplicat@mail.com"
+            "first_name": 'maybe b',
+            "email_address": 'duplicat@mail.com'
           },
           {
             "id": 6,
-            "first_name": "almost",
-            "email_address": "maybe@mail.com"
+            "first_name": 'almost',
+            "email_address": 'maybe@mail.com'
           },
           {
             "id": 8,
-            "first_name": "Steven",
-            "email_address": "sakatius@gmail.com"
+            "first_name": 'Steven',
+            "email_address": 'sakatius@gmail.com'
           },
           {
             "id": 10,
-            "first_name": "Stevssssssssen",
-            "email_address": "sakatixxxxxxxus@gmail.com"
+            "first_name": 'Stevssssssssen',
+            "email_address": 'sakatixxxxxxxus@gmail.com'
           },
           {
             "id": 12,
-            "first_name": "almost none",
-            "email_address": "maybes@maxil.com"
+            "first_name": 'almost none',
+            "email_address": 'maybes@maxil.com'
           }
         ]
       }

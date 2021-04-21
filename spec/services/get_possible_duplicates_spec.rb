@@ -6,8 +6,8 @@ RSpec.describe GetPossibleDuplicates do
 
   let(:possible_duplicates) do
     [
-      {email: 'duplicate@mail.com', possible_duplicated: 'duplicat@mail.com'},
-      {email: 'maybes@maxil.com', possible_duplicated: 'maybe@mail.com'}
+      { email: 'duplicate@mail.com', possible_duplicated: 'duplicat@mail.com' },
+      { email: 'maybes@maxil.com', possible_duplicated: 'maybe@mail.com' }
     ]
   end
 

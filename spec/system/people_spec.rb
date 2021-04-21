@@ -1,4 +1,4 @@
-RSpec.describe "People", type: :system do
+RSpec.describe 'People', type: :system do
   before do
     driven_by(:selenium_chrome_headless)
   end
