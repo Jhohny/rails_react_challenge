@@ -1,11 +1,17 @@
-RSpec.describe Rest::Salesloft::Client do
+RSpec.describe GetPeople do
+  let(:service)  { described_class.new }
   let(:base_url) { Settings.salesloft.url }
-  let(:client)   { described_class.new }
   let(:response) { build(:people_successful) }
   let(:path)     { Settings.salesloft.people_path }
   let(:headers)  { { 'Authorization' => "Bearer #{Settings.salesloft.token}" } }
 
-  subject { client.get_people }
+  let(:people) do
+    GetPeople::Person.new(
+      full_name: 'Steven Pease',
+      email: 'sakatius@gmail.com',
+      job_title: 'Software Engineer'
+    )
+  end
 
   before do
     stub_request(:get, base_url + path)
@@ -15,8 +21,8 @@ RSpec.describe Rest::Salesloft::Client do
   end
 
   context 'when it is successful' do
-    it 'returns people' do
-      expect(subject[:data].first[:first_name]).to be_present
+    it '#call' do
+      expect(service.call).to eq([people])
     end
   end
 end

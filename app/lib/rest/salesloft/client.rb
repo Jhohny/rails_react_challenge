@@ -13,8 +13,10 @@ class Rest::Salesloft::Client
     request = Net::HTTP::Get.new(uri)
     request["Authorization"] = "Bearer #{@settings.token}"
 
-    Net::HTTP.start(uri.hostname, uri.port, use_ssl: true) { |http|
+    response = Net::HTTP.start(uri.hostname, uri.port, use_ssl: true) { |http|
       http.request(request)
     }
+
+    JSON.parse(response.body, symbolize_names: true)
   end
 end
