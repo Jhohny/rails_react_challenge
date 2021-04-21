@@ -20,8 +20,8 @@ RSpec.describe GetPeople do
       ).to_return(status: 200, body: response['body'].to_json)
   end
 
-  context 'when it is successful' do
-    it '#call' do
+  describe '#call' do
+    it 'returns people resource' do
       expect(service.call).to eq([people])
     end
   end

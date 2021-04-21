@@ -30,8 +30,8 @@ RSpec.describe GetFrequencyChars do
       ).to_return(status: 200, body: response['body'].to_json)
   end
 
-  context 'when it is successful' do
-    it '#call' do
+  describe '#call' do
+    it 'returns frequency chars collection' do
       expect(service.call).to eq(frequency_char)
     end
   end

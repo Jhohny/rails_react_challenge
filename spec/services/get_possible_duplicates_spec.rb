@@ -11,8 +11,8 @@ RSpec.describe GetPossibleDuplicates do
     ]
   end
 
-  context 'when it is successful' do
-    it '#call' do
+  describe '#call' do
+    it 'returns correct duplicates' do
       expect(service.call).to eq(possible_duplicates)
     end
   end
