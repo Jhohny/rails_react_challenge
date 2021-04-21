@@ -84,4 +84,58 @@ FactoryBot.define do
 
     initialize_with { ActiveSupport::HashWithIndifferentAccess.new(attributes) }
   end
+
+  factory :people_successful_duplicates, class: Hash do
+    body do
+      {
+        "metadata": {
+          "filtering": {},
+          "paging": {
+            "per_page": 25,
+            "current_page": 1,
+            "next_page": nil,
+            "prev_page": nil
+          },
+          "sorting": {
+            "sort_by": "updated_at",
+            "sort_direction": "DESC NULLS LAST"
+          }
+        },
+        "data": [
+          {
+            "id": 2,
+            "first_name": "maybe",
+            "email_address": "duplicate@mail.com"
+          },
+          {
+            "id": 4,
+            "first_name": "maybe b",
+            "email_address": "duplicat@mail.com"
+          },
+          {
+            "id": 6,
+            "first_name": "almost",
+            "email_address": "maybe@mail.com"
+          },
+          {
+            "id": 8,
+            "first_name": "Steven",
+            "email_address": "sakatius@gmail.com"
+          },
+          {
+            "id": 10,
+            "first_name": "Stevssssssssen",
+            "email_address": "sakatixxxxxxxus@gmail.com"
+          },
+          {
+            "id": 12,
+            "first_name": "almost none",
+            "email_address": "maybes@maxil.com"
+          }
+        ]
+      }
+    end
+
+    initialize_with { ActiveSupport::HashWithIndifferentAccess.new(attributes) }
+  end
 end
