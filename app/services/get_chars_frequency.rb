@@ -1,4 +1,4 @@
-class GetFrequencyChars < ApplicationService
+class GetCharsFrequency < ApplicationService
   def initialize
     @people = Rest::Salesloft::Client.new.get_people
   end

@@ -1,4 +1,4 @@
-RSpec.describe GetFrequencyChars do
+RSpec.describe GetCharsFrequency do
   let(:service)  { described_class.new }
   let(:base_url) { Settings.salesloft.url }
   let(:response) { build(:people_successful) }
